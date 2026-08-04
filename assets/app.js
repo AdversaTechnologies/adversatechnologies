@@ -1,17 +1,36 @@
 (() => {
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav-links');
+
+  const setNavOpen = (open) => {
+    if (!nav || !menuButton) return;
+    nav.classList.toggle('open', open);
+    document.body.classList.toggle('nav-open', open);
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  };
+
   if (menuButton && nav) {
+    let backdrop = document.querySelector('.nav-backdrop');
+    if (!backdrop) {
+      backdrop = document.createElement('button');
+      backdrop.type = 'button';
+      backdrop.className = 'nav-backdrop';
+      backdrop.setAttribute('aria-label', 'Close navigation');
+      document.body.appendChild(backdrop);
+    }
+
     menuButton.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      document.body.classList.toggle('nav-open', open);
-      menuButton.setAttribute('aria-expanded', String(open));
+      setNavOpen(!nav.classList.contains('open'));
     });
-    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      document.body.classList.remove('nav-open');
-      menuButton.setAttribute('aria-expanded', 'false');
-    }));
+    backdrop.addEventListener('click', () => setNavOpen(false));
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setNavOpen(false)));
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setNavOpen(false);
+    });
+    window.addEventListener('resize', () => {
+      if (window.matchMedia('(min-width: 1061px)').matches) setNavOpen(false);
+    });
   }
 
   const tabButtons = [...document.querySelectorAll('[data-tab]')];
