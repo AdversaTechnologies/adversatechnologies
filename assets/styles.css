@@ -123,16 +123,16 @@ h4 { margin-bottom: 8px; font-size: 1rem; }
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
   border-bottom: 1px solid rgba(255,255,255,.07);
-  background: rgba(7,17,31,.9);
+  background: rgba(7,17,31,.94);
   color: #fff;
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 }
 .nav-wrap {
   position: relative;
-  z-index: 1002;
+  z-index: 2;
   min-height: 76px;
   display: flex;
   align-items: center;
@@ -213,7 +213,8 @@ h4 { margin-bottom: 8px; font-size: 1rem; }
 .menu-toggle {
   display: none;
   position: relative;
-  z-index: 1003;
+  z-index: 3;
+  flex: 0 0 auto;
   width: 44px;
   height: 44px;
   border: 1px solid rgba(255,255,255,.14);
@@ -242,13 +243,15 @@ h4 { margin-bottom: 8px; font-size: 1rem; }
   display: none;
   position: fixed;
   inset: 0;
-  z-index: 999;
-  background: rgba(4, 10, 18, .55);
+  z-index: 10040;
+  background: rgba(4, 10, 18, .62);
   border: 0;
   padding: 0;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 body.nav-open .nav-backdrop { display: block; }
+body.nav-open { overflow: hidden; touch-action: none; }
 
 .btn {
   display: inline-flex;
@@ -918,13 +921,12 @@ body.nav-open .nav-backdrop { display: block; }
 .path-card > p { margin: 10px 0 0; color: #b7c6dc; font-size: 13px; line-height: 1.45; }
 
 @media (max-width: 1060px) {
-  /* backdrop-filter creates a containing block for position:fixed children —
-     disable it while the drawer is open so the menu is not trapped behind content. */
-  body.nav-open .site-header {
+  /* Keep header above page content; avoid filter containing-blocks on mobile. */
+  .site-header {
+    z-index: 10050;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     background: #07111f;
-    overflow: visible;
   }
   .nav-links {
     display: none;
@@ -933,17 +935,19 @@ body.nav-open .nav-backdrop { display: block; }
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1001;
+    z-index: 10045;
     width: 100%;
+    max-width: 100vw;
     height: calc(100vh - 76px);
     height: calc(100dvh - 76px);
     margin: 0;
-    padding: 20px 24px 40px;
+    padding: 12px 24px 120px;
     background: #07111f;
+    color: #fff;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
-    box-shadow: 0 24px 60px rgba(0,0,0,.35);
+    box-shadow: none;
   }
   .nav-links.open { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
   .nav-links > a,
@@ -956,6 +960,7 @@ body.nav-open .nav-backdrop { display: block; }
     border-bottom: 1px solid rgba(255,255,255,.08);
     text-align: left;
     font-size: 16px;
+    color: #c3ceda;
   }
   .nav-product-highlight {
     justify-content: flex-start;
@@ -982,16 +987,13 @@ body.nav-open .nav-backdrop { display: block; }
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1002;
+    z-index: 10046;
     width: auto;
     margin: 0;
     padding: 20px 24px calc(20px + env(safe-area-inset-bottom, 0px));
     background: linear-gradient(180deg, rgba(7,17,31,0), #07111f 28%);
   }
   body.nav-open .nav-cta .btn { width: 100%; }
-  body.nav-open .nav-links {
-    padding-bottom: 110px;
-  }
   .menu-toggle { display: block; }
   .hero { min-height: auto; }
   .hero-inner, .page-hero-grid { grid-template-columns: 1fr; }
