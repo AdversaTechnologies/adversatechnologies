@@ -1,33 +1,26 @@
 # Adversa Technologies — Quick Guide
 
-Static corporate website with the current positioning:
+English corporate site. Company identity is AI cybersecurity platforms—not finance-only.
 
-- Primary offer: **AdversaShield Offensive + Remediate**
-- Initial market: **Credit Unions**
-- Partner message: **Partner-led advisory. Adversa-powered validation.**
-- Platform areas: **FINATTACK**, **SOC AI**, **Resilience Fabric**
-- Legal entity: **Adversa Technologies Corp.** — Miami, Florida, USA
+## Peer products
 
-## Pages
-
-| File | Content |
+| Product | Role |
 |---|---|
-| `index.html` | Home and ecosystem |
-| `offensive-remediation.html` | Primary product |
-| `partners.html` | Partner program |
-| `platform.html` | Platform and moats |
-| `finattack.html` | Financial intelligence |
-| `soc-ai.html` | SOC AI expansion |
-| `company.html` | Company |
+| **AdversaShield** | Horizontal Continuous Cybersecurity Validation Platform |
+| **FINATTACK** | Financial & Credit Union sector service (same product level) |
+
+## Capabilities
+
+- Offensive + Remediation
+- SOC AI
+- Resilience Fabric
+
+## Legal entity
+
+**Adversa Technologies Corp.** — Miami, Florida, USA
 
 ## Run locally
 
 ```bash
 python -m http.server 8080
 ```
-
-Then open `http://localhost:8080`.
-
-## Style
-
-The current corporate visual language is preserved: dark header, navy hero, blue/teal accents, existing typography and components.

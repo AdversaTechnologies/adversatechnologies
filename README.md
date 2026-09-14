@@ -1,22 +1,31 @@
 # Adversa Technologies — Corporate Website
 
-Responsive, dependency-free corporate website for Adversa Technologies and the AdversaShield product family.
+Responsive, dependency-free corporate website for **Adversa Technologies Corp.** (Miami, Florida, USA).
 
-## Positioning
+## Portfolio architecture
 
-- **Primary first product:** AdversaShield Offensive + Remediate
-- **Initial market:** Credit Unions
-- **Partner narrative:** Partner-led advisory. Adversa-powered validation.
-- **Platform areas:** FINATTACK Intelligence, AdversaShield SOC AI, Adversa Resilience Fabric
+Peer products (same level):
+
+1. **AdversaShield** — Continuous Cybersecurity Validation Platform (horizontal)
+2. **FINATTACK** — Financial & Credit Union cybersecurity service (vertical)
+
+Supporting capabilities:
+
+- Offensive + Remediation
+- SOC AI
+- Adversa Resilience Fabric
+
+Financial / Credit Union is **not** the company center of gravity. It is delivered through FINATTACK as a peer product to AdversaShield.
 
 ## Pages
 
-- `index.html` — homepage and ecosystem overview
-- `offensive-remediation.html` — primary product page
-- `partners.html` — partnership landing page
-- `platform.html` — ecosystem and moats
-- `finattack.html` — financial intelligence layer
-- `soc-ai.html` — SOC AI expansion area
+- `index.html` — company homepage and portfolio
+- `adversashield.html` — platform product
+- `finattack.html` — financial / Credit Union peer service
+- `offensive-remediation.html` — delivery capability
+- `soc-ai.html` — SOC capability
+- `platform.html` — shared fabric and moats
+- `partners.html` — partner program
 - `company.html` — company positioning
 
 ## Run locally
@@ -25,13 +34,4 @@ Responsive, dependency-free corporate website for Adversa Technologies and the A
 python -m http.server 8080
 ```
 
-Then visit `http://localhost:8080`.
-
-## Legal entity
-
-**Adversa Technologies Corp.**  
-Miami, Florida, USA
-
-## Live site
-
-https://adversatechnologies.github.io/adversatechnologies/
+Live: https://adversatechnologies.github.io/adversatechnologies/
