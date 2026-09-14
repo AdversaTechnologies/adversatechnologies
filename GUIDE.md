@@ -7,7 +7,7 @@ English corporate site. Company identity is AI cybersecurity platforms—not fin
 | Product | Role |
 |---|---|
 | **AdversaShield** | Horizontal Continuous Cybersecurity Validation Platform |
-| **FINATTACK** | Financial & Credit Union sector service (same product level) |
+| **FINATTACK** | Financial & Credit Union sector service |
 
 ## Capabilities
 

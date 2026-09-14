@@ -2,12 +2,10 @@
 
 Responsive, dependency-free corporate website for **Adversa Technologies Corp.** (Miami, Florida, USA).
 
-## Portfolio architecture
+## Products
 
-Peer products (same level):
-
-1. **AdversaShield** — Continuous Cybersecurity Validation Platform (horizontal)
-2. **FINATTACK** — Financial & Credit Union cybersecurity service (vertical)
+1. **AdversaShield** — Continuous Cybersecurity Validation Platform
+2. **FINATTACK** — Financial & Credit Union cybersecurity service
 
 Supporting capabilities:
 
@@ -15,18 +13,15 @@ Supporting capabilities:
 - SOC AI
 - Adversa Resilience Fabric
 
-Financial / Credit Union is **not** the company center of gravity. It is delivered through FINATTACK as a peer product to AdversaShield.
-
 ## Pages
 
-- `index.html` — company homepage and portfolio
+- `index.html` — homepage and about
 - `adversashield.html` — platform product
-- `finattack.html` — financial / Credit Union peer service
+- `finattack.html` — financial / Credit Union service
 - `offensive-remediation.html` — delivery capability
 - `soc-ai.html` — SOC capability
-- `platform.html` — shared fabric and moats
+- `platform.html` — shared fabric and advantages
 - `partners.html` — partner program
-- `company.html` — company positioning
 
 ## Run locally
 

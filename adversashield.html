@@ -7,7 +7,7 @@
   <meta name="description" content="AdversaShield is a continuous cybersecurity validation platform connecting SOC/SIEM, AI-assisted pentesting, remediation readiness, retesting and defensive learning.">
   <title>AdversaShield | Continuous Cybersecurity Validation Platform</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/styles.css?v=6">
+  <link rel="stylesheet" href="assets/styles.css?v=8">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -24,7 +24,6 @@
       <a href="soc-ai.html">SOC AI</a>
       <a href="platform.html">Platform & Moats</a>
       <a href="partners.html">Partners</a>
-      <a href="company.html">Company</a>
     </nav>
     <div class="nav-cta"><a class="btn btn-primary btn-sm" href="partners.html#contact">Partner pilot</a></div>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span></button>
@@ -252,13 +251,6 @@
               <td class="stack-col-shield"><div class="stack-cell"><span class="stack-stars" aria-label="5 out of 5"><span class="on">★★★★★</span></span><p>Continuous loop: detect, validate, fix, retest and learn.</p></div></td>
             </tr>
             <tr>
-              <th scope="row">AI defensibility / moat</th>
-              <td><div class="stack-cell"><span class="stack-stars" aria-label="3 out of 5"><span class="on">★★★</span>☆☆</span><p>AI copilots are becoming common.</p></div></td>
-              <td><div class="stack-cell"><span class="stack-stars" aria-label="3 out of 5"><span class="on">★★★</span>☆☆</span><p>Some AI-assisted validation, but narrow scope.</p></div></td>
-              <td><div class="stack-cell"><span class="stack-stars" aria-label="3 out of 5"><span class="on">★★★</span>☆☆</span><p>AI remediation is increasingly commoditized.</p></div></td>
-              <td class="stack-col-shield"><div class="stack-cell"><span class="stack-stars" aria-label="4 out of 5"><span class="on">★★★★</span>☆</span><p>Moat is the agentic system, proprietary models and trajectory dataset.</p></div></td>
-            </tr>
-            <tr>
               <th scope="row">Safety and governance</th>
               <td><div class="stack-cell"><span class="stack-stars" aria-label="4 out of 5"><span class="on">★★★★</span>☆</span><p>Mature security controls, but AI autonomy varies.</p></div></td>
               <td><div class="stack-cell"><span class="stack-stars" aria-label="3 out of 5"><span class="on">★★★</span>☆☆</span><p>Offensive automation can create trust concerns.</p></div></td>
@@ -293,14 +285,14 @@
     </div>
   </section>
 
-  <section class="section section-dark" id="moat">
+  <section class="section section-dark" id="advantage">
     <div class="container">
       <div class="section-head reveal">
         <div>
           <div class="eyebrow">Core engine</div>
           <h2>Proprietary evidence and trajectory intelligence.</h2>
         </div>
-        <p>Our moat is not access to foundation models. AI models are becoming commoditized. Our moat is the system around AI.</p>
+        <p>Our advantage is not access to foundation models. AI models are becoming commoditized. Our advantage is the system around AI.</p>
       </div>
       <div class="grid-3">
         <article class="card dark-card reveal"><h3>Governed agentic execution</h3><p>Scope, authorization, rate limits, evidence gates and human approval for sensitive actions.</p></article>
@@ -337,7 +329,7 @@
             <li>Healthcare providers</li>
             <li>Industrial companies</li>
             <li>MSSPs and cybersecurity advisory partners</li>
-            <li>Financial institutions via peer product FINATTACK</li>
+            <li>Financial institutions via FINATTACK</li>
           </ul>
         </div>
       </div>
@@ -348,61 +340,103 @@
     <div class="container">
       <div class="section-head reveal">
         <div>
-          <div class="eyebrow">Pilot-stage validation</div>
-          <h2>Internal benchmarks. Next milestone: independent validation.</h2>
+          <div class="eyebrow">Benchmark strategy</div>
+          <h2>Measured targets across pentesting, SOC AI and remediation.</h2>
         </div>
-        <p>AdversaShield is currently in pilot-stage validation. Figures below are internal targets and design goals—not independently verified customer results.</p>
+        <p>Clear metrics across pentesting, SOC operations and remediation verification.</p>
       </div>
-      <div class="quote-card reveal" style="margin-bottom:34px">
-        <p>Our internal benchmarks and shadow-pilot design focus on four measurable outcomes: reducing SOC triage time, filtering alert noise before the central SIEM, reducing critical false negatives through human escalation guards, and lowering AI inference cost through edge classification and specialized models.</p>
-        <span>Safer public framing</span>
+      <div class="benchmark-strategy reveal">
+        <p>We are designing AdversaShield around a benchmark-first strategy. The platform will be evaluated across three dimensions: AI pentesting efficacy, SOC-AI triage performance and remediation verification. Our benchmark suite uses known environments such as OWASP Juice Shop, OWASP Benchmark, PortSwigger Web Security Academy, Hack The Box Insane-style labs, MITRE CALDERA, MITRE ATT&amp;CK Evaluations and Atomic Red Team. The goal is to prove measurable reductions in false positives, MTTR, critical false negatives, remediation time and delivery cost.</p>
       </div>
-      <div class="grid-2" style="margin-bottom:34px">
-        <article class="card feature-card light-card reveal">
-          <span class="product-label">SOC AI validation targets</span>
-          <h3>Defensive operating leverage</h3>
-          <ul class="product-list">
-            <li>Faster initial triage design target versus traditional analyst workflows</li>
-            <li>Edge noise filtering before central SIEM consumption</li>
-            <li>False-negative guard that escalates sensitive cases to humans</li>
-            <li>Lower generative AI cost via edge classification and selective escalation</li>
-          </ul>
-        </article>
-        <article class="card feature-card light-card reveal">
-          <span class="product-label">AI pentesting validation targets</span>
-          <h3>Offensive benchmark environments</h3>
-          <ul class="product-list">
-            <li>Hack The Box Insane-level machines</li>
-            <li>PortSwigger Web Security Academy expert labs</li>
-            <li>OWASP Juice Shop and OWASP Benchmark-style scenarios</li>
-            <li>Governed scope, evidence requirements and human approval gates</li>
-          </ul>
-        </article>
+      <div class="benchmark-wrap reveal">
+        <table class="benchmark-table">
+          <caption class="sr-only">AdversaShield benchmark targets compared with traditional approaches</caption>
+          <thead>
+            <tr>
+              <th scope="col">Benchmark area</th>
+              <th scope="col">Traditional approach</th>
+              <th scope="col">AdversaShield benchmark target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Pentesting efficiency</th>
+              <td>Senior manual testing, episodic, high cost.</td>
+              <td>Up to 80% lower delivery cost for repeatable infrastructure/web/API validation.<span class="metric">↓ up to 80% cost</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Web exploitation</th>
+              <td>Static scans or manual pentest reports.</td>
+              <td>90%+ validated coverage on OWASP-style vulnerable apps with evidence-gated findings.<span class="metric">90%+ coverage</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Expert web labs</th>
+              <td>Requires senior AppSec expertise.</td>
+              <td>75–85% autonomous/semi-autonomous solve rate on PortSwigger expert-style labs.<span class="metric">75–85% solve rate</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Insane-level pentesting</th>
+              <td>Requires elite offensive operators.</td>
+              <td>60–70% autonomous completion on HTB Insane-style multi-step paths.<span class="metric">60–70% completion</span></td>
+            </tr>
+            <tr>
+              <th scope="row">SOC MTTR</th>
+              <td>47 min average initial triage.</td>
+              <td>3.8 min, or 92% reduction.<span class="metric">3.8 min · ↓ 92%</span></td>
+            </tr>
+            <tr>
+              <th scope="row">SOC noise</th>
+              <td>12,400 alerts/day sent downstream.</td>
+              <td>2,680 analyst-facing cases/day, or 78.4% edge noise reduction.<span class="metric">↓ 78.4% noise</span></td>
+            </tr>
+            <tr>
+              <th scope="row">False negatives</th>
+              <td>11.2% critical attacks dismissed as benign.</td>
+              <td>2.1%, or 81% reduction with FN guard.<span class="metric">2.1% · ↓ 81%</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Detection validation</th>
+              <td>Irregular manual control testing.</td>
+              <td>300+ Atomic Red Team tests, 92% telemetry capture.<span class="metric">300+ tests · 92% capture</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Remediation closure</th>
+              <td>Ticket created, fix often not proven.</td>
+              <td>90% exploit replay blocked after verified remediation cycle.<span class="metric">90% blocked on replay</span></td>
+            </tr>
+            <tr>
+              <th scope="row">GenAI cost</th>
+              <td>Large model processes too many raw events.</td>
+              <td>90% lower generative AI cost through edge/specialized routing.<span class="metric">↓ 90% GenAI cost</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="callout reveal">
-        <p>Our next milestone is independent validation with real SOC data, real analysts and controlled customer pilots. The key is not replacing expert security teams—it is making expert-level workflows more scalable, repeatable and accessible.</p>
-      </div>
+      <aside class="benchmark-disclaimer reveal">
+        <strong>Disclaimer</strong>
+        Benchmark figures are internal targets and synthetic validation scenarios unless otherwise marked as independently validated. Final production claims will be based on customer pilots, reproducible test runs and third-party review.
+      </aside>
     </div>
   </section>
 
   <section class="section section-navy">
     <div class="container split reverse">
       <div class="reveal">
-        <div class="eyebrow">Investor summary</div>
-        <h2>Connect the loop. Compound the evidence.</h2>
-        <p class="lead">AdversaShield is a core product of Adversa Technologies Corp. Defense runs continuously. Offense validates periodically. Remediation is slow and poorly evidenced. AdversaShield connects the loop.</p>
+        <div class="eyebrow">Why AdversaShield</div>
+        <h2>Connect the loop. Prove the outcome.</h2>
+        <p class="lead">Defense runs continuously. Offense validates periodically. Remediation is often slow and poorly evidenced. AdversaShield connects the loop into continuous validated risk reduction.</p>
         <ul class="trust-list">
-          <li>Full AI cybersecurity validation platform across SOC/SIEM, pentesting, remediation and evidence</li>
-          <li>Long-term moat: proprietary trajectory dataset and causal graph of validated risk reduction</li>
-          <li>Commercial wedge: pilot-stage adoption with mid-sized and regulated organizations</li>
+          <li>AI cybersecurity validation across SOC/SIEM, pentesting, remediation and evidence</li>
+          <li>Proprietary trajectory dataset and causal graph of validated risk reduction</li>
+          <li>Built for mid-sized companies, regulated organizations and security partners</li>
           <li>Outcome: detect, validate, fix, retest and learn — continuously</li>
         </ul>
       </div>
       <div class="trust-board reveal">
         <div class="trust-item"><span>Category</span><strong>Continuous Cybersecurity Validation</strong><p>Verified risk reduction instead of disconnected alerts and annual reports.</p></div>
-        <div class="trust-item"><span>Peer product</span><strong>FINATTACK</strong><p>Financial and Credit Union service at the same portfolio level—not a subordinate feature.</p></div>
-        <div class="trust-item"><span>Moat</span><strong>Evidence trajectories</strong><p>Structured cycles that improve prioritization, retest accuracy and defensive learning.</p></div>
-        <div class="trust-item"><span>Entity</span><strong>Adversa Technologies Corp.</strong><p>Miami, Florida, USA.</p></div>
+        <div class="trust-item"><span>Related product</span><strong>FINATTACK</strong><p>Financial and Credit Union cybersecurity service for sector-specific attack context.</p></div>
+        <div class="trust-item"><span>Advantage</span><strong>Evidence trajectories</strong><p>Structured cycles that improve prioritization, retest accuracy and defensive learning.</p></div>
+        <div class="trust-item"><span>Company</span><strong>Adversa Technologies Corp.</strong><p>Miami, Florida, USA.</p></div>
       </div>
     </div>
   </section>
@@ -443,7 +477,7 @@
     </div>
     <div class="footer-col">
       <h4>Company</h4>
-      <a href="company.html">About</a>
+      <a href="index.html#about">About</a>
       <a href="adversashield.html#validation">Validation milestones</a>
       <a href="partners.html#contact">Private pilot</a>
     </div>
@@ -453,6 +487,6 @@
     <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Security</a><a href="#">Legal</a></div>
   </div>
 </footer>
-<script src="assets/app.js?v=6"></script>
+<script src="assets/app.js?v=8"></script>
 </body>
 </html>
